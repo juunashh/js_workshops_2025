@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Workshop 1</title>
+		<!-- script tag is where Javascript goes to -->
+		<script>
+			for(var i = 0; i < 400; i++) {
+				console.log("This round is " + i);
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Welcome to example page</h1>
+		<p> Lorem ipsum dolorem...   </p>
+		<script>
+			/* var firstname = "Joonas";
+			var lastname = "Ristola";
+			window.alert(firstname);
+			document.write(lastname);
+			console.log(lastname + " " + firstname);
+			*/
+
+			var x = 19;
+			var order = 'Beer';
+			if (x > 50) {
+				document.write("<h2>He's over 50!</h2>" );
+			} else if (x <= 50 && x > 30){
+				document.write("<h3>Middle aged man, who ordered some "+order + "</h3>");
+			} else if (x >= 18) {
+				document.write("<p>Howdy young fella, here is your " + order + "</p>")
+			} else {
+				document.write("It seems you're bit underaged.");
+			}
+
+			var arr = [];
+			for (var i=0; i<15; i++) {
+				arr.push( Math.floor(Math.random() * 100 ));
+				console.log(arr[i]);
+			}
+			for (num in arr) {
+			document.write("<strong>" + arr[num] + "</strong> </br>")
+			}
+
+			// Returns true if age is over 18, otherwise returns false
+			function areYouOldEnough(age) {
+				if (age < 18) {
+					console.log(false);
+					return 'You are NOT over 18';
+				} else
+					console.log(true);
+					return 'You are an adult';
+				}
+			
+			document.write(areYouOldEnough(19));
+			/* 
+			alert(areYouOldEnough(5));
+			alert(areYouOldEnough(25)); 
+			*/
+
+			// Define an object to hold data for a person
+			var person = {
+				firstName:"John",
+				lastName:"Doe",
+				age:50,
+				eyeColor:"blue",
+				address:"Way Street 55",
+				tele:"0401234567"
+			};
+
+			function printInfo(person) {
+				console.log(person.firstName);
+				console.log(person.lastName);
+				console.log(person.age);
+				console.log(person.eyeColor);
+				console.log(person.address);
+				console.log(person.tele);
+			}
+		</script>
+	</body>
+
+</html>

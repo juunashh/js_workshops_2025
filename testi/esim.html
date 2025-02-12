@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <script>
+        var array = ["apple", "banana", "cherry"];
+
+        for (var i=0; i<array.length, i++){
+            console.log(array[i])
+        }
+
+        function person(name, age){
+            this.name = name;
+            this.age = age;
+        }
+
+        person.prototype.getFullName = function(){
+            return this.name + " " + this.age;
+        }
+    </script>
+</body>
+</html>
